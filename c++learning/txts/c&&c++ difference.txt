@@ -1,0 +1,24 @@
+结构体是不同的，c++免去了使用typedef
+struct student{
+    string name;
+    int age;
+};
+可以直接拿student来用相当于使用了typedef
+
+还有传地址和传值的区别
+#include<iostream>
+using namespace std;
+int add(int &a)
+{
+    a++;
+    return a;
+}
+int main()
+{
+    int a=4;
+
+    add(a);
+    cout << a;
+
+    return 0;
+}

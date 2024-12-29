@@ -1,0 +1,4 @@
+关于const的使用问题
+首先 区分const int *p,int* const p,还有const int* const p;
+对于const int *p ,int &* must together,watch const 和谁挨得近，这是指向常量整数的指针，所以不能利用解引用符来修改整数，但是可以更改p的指向关系 。
+反之自己往下想吧

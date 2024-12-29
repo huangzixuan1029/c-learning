@@ -1,0 +1,18 @@
+第一种 递归的方法
+int function(int a,in b)
+{
+    if(b==0) return a;
+    return function(b,a%b);
+}
+
+第二种 不使用递归
+int function(int a,int b)
+{
+    while(b!=0)
+    {
+        int temp=b;
+        b=a%b;
+        a=temp;
+    }
+    return a;
+}   
